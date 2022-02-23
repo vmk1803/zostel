@@ -1,6 +1,6 @@
 const express = require("express");
 
-const app = require("../index");
+const app = express();
 
 const connect = require("./configs/db")
 
@@ -14,6 +14,6 @@ app.use("/hotel",hotelController);
 
 app.listen(2345,async(res,rec)=>{
   await connect();
-  console.log("Listening on port 2345")
+  console.log("Listening on port 2345...")
   
 })
