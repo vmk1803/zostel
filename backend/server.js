@@ -1,5 +1,7 @@
 const app = require("./index");
+const connect = require("./src/configs/db");
 
-app.listen(2345, () => {
+app.listen(2345, async () => {
   console.log("Listening on port 2345...");
+  await connect();
 });
