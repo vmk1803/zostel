@@ -1,54 +1,48 @@
 const express = require("express");
+const Hotel = require("../models/hotel.model");
+const Room = require("../models/room.model");
 
 const router = express.Router();
 
-const Hotel = require("../models/hotel.model")
-
-router.post("", async (req,res)=>{
-  try{
+router.post("", async (req, res) => {
+  try {
     const hotel = await Hotel.create(req.body);
-    return res.status(200).send(hotel)
-    }catch(err){
-        console.log(err)
-        res.status(500).json({message:err.message,status:"Failed"})
-    }
-    
-})
-
-
-router.get("", async (req,res)=>{
-
-    try{
-        const hotels = await Hotel.find().lean().exec();
-    return res.status(201).send(hotels)
-    }catch(err){
-        res.status(500).json({message:err.message,status:"Failed"})
-    }
-    
+    return res.status(201).send(hotel);
+  } catch (err) {
+    return res.send(500).send(err.message);
+  }
 });
 
-router.patch("/:id", async (req,res)=>{
-
-    try{
-        const hotel= await Hotel.findByIdAndUpdate(req.params.id).lean().exec();
-    return res.status(201).send(hotel)
-    }catch(err){
-        res.status(500).json({message:err.message,status:"Failed"})
-    }
-    
+router.get("/:hotelname", async (req, res) => {
+  try {
+    const hotel = await Hotel.findOne({ placeName: req.params.hotelname })
+      .select({ _id: 0 })
+      .populate({ path: "address" })
+      .lean()
+      .exec();
+    return res.status(200).send(hotel);
+  } catch (err) {
+    return res.status(500).send(err.message);
+  }
 });
 
-router.delete("/:id", async (req,res)=>{
-
-    try{
-        const hotel=await Hotel.findByIdAndDelete(req.params.id).lean().exec();
-    return res.status(201).send(hotel)
-    }catch(err){
-        res.status(500).json({message:err.message,status:"Failed"})
-    }
-    
+router.get("/:hotelName/rooms", async (req, res) => {
+  try {
+    const rooms = await Hotel.findOne({ placeName: req.params.hotelName })
+      .populate({ path: "rooms" })
+      .select({
+        _id: 0,
+        placeName: 0,
+        placeDescription: 0,
+        placeImg: 0,
+        address: 0,
+      })
+      .lean()
+      .exec();
+    return res.send(rooms);
+  } catch (err) {
+    return res.status(500).send(err.message);
+  }
 });
 
- 
-
-module.exports=router;
+module.exports = router;

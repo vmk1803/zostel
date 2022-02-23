@@ -1,18 +1,29 @@
 const mongoose = require("mongoose");
 
-const hotelSchema = mongoose.Schema({
-    city:{type:String,required:true},
-    beds:{type:Number,required:true},
-    bedType:{type:String,required:true},
-    img1:{type:String,required:true},
-    img2:{type:String,required:true},
-    name:{type:String,required:true},
-    price:{type:Number,required:true},
-    persons:{type:Number,required:true},
-    details:{type:String,required:true},
-},{
-    versionKey:false,
-    timestamps:true,
-})
+const hotelSchema = new mongoose.Schema(
+  {
+    placeName: { type: String, required: true },
+    placeDescription: { type: String, required: true },
+    placeImg: [{ type: String, required: true }],
+    address: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "address",
+      required: true,
+    },
+    rooms: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "room",
+        required: true,
+      },
+    ],
+  },
+  {
+    versionKey: false,
+    timeStamps: true,
+  }
+);
 
-module.exports = mongoose.model("hotels",hotelSchema);
+const Hotel = mongoose.model("hotel", hotelSchema);
+
+module.exports = Hotel;
