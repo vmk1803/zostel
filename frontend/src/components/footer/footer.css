@@ -1,0 +1,64 @@
+.main{
+    height: 280px;
+    background: #2D3748;
+    text-align: left;
+    align-items: left;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 45%;
+  }
+  .heading{
+      display: flex;
+      width: 90%;
+      margin: auto;
+  }
+  .logo{
+      width: 70px;
+      height: 64.72px;
+  }
+  .siteName{
+      font-weight: bold;
+      font-size: 28px;
+      color: #FFFFFF;
+      margin: 0px 24px;
+      letter-spacing: 0.44em;
+  }
+  .subHeadings{
+      width: 310px;
+      margin-left:5% ;
+      margin-top: 4%;
+      color: #FFFFFF;
+      font-weight: 400;
+      font-size: 18px;
+     
+  }
+  .links{
+      text-align: left;
+      color: #FFFFFF;
+      margin-top: 22px;
+  
+  }
+  .impLink{
+      font-weight: 400;
+      font-size: 18px;
+      margin-bottom: 13%;
+  }
+  .allLink{
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 18px;
+  }
+  .copyRight{
+      background: #2D3748;
+      color: #FFFFFF;
+      font-size: 14px;
+      padding-top: 0.1px;
+      padding-bottom: 0.1px;
+      justify-content: center;
+      text-align: center;
+  }
+  .copyRight > p{
+      font-size: 16px;
+      font-weight: 400;
+  }
