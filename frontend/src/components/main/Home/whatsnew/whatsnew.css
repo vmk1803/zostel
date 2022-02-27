@@ -1,0 +1,50 @@
+.main {
+  border: 1px solid green;
+}
+.text {
+  float: left;
+  margin-left: 100px;
+}
+.explore {
+  /* border: 1px solid red; */
+  width: 250px;
+}
+.h6text {
+  float: left;
+  margin-top: 5px;
+  margin-left: 8px;
+  /* border: 1px solid red; */
+}
+.h5text {
+  text-align: left;
+  float: left;
+  margin-left: 8px;
+}
+.ptext {
+  text-align: left;
+  margin-left: 8px;
+}
+.expbtn {
+  width: 220px;
+  margin-bottom: 5px;
+  border: none;
+  background-color: rgb(241, 86, 63);
+}
+
+.Caroseldiv {
+  height: 200px;
+}
+.whatexp {
+  margin-top: 10px;
+  margin-right: 80px;
+
+  float: right;
+  font-weight: bolder;
+}
+.nextbtn {
+  border: 10px solid green;
+}
+.boxes {
+  border: 1px solid red;
+  margin-right: 100px;
+}
