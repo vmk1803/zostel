@@ -1,0 +1,82 @@
+.main{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    margin-top: 60px;
+    padding:50px 25px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+}
+.heading{
+    font-weight: bold;
+    font-size: 24px;
+    color: #43474B;
+}
+.address{
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+.location{
+    font-size: 14px;
+    font-weight: 400;
+    margin:5px !important;
+}
+.contact{
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 5px !important;
+}
+
+.whDiv{
+    border: 1px solid #e2e8f0;
+    align-items: center;
+    padding: 10px 20px;
+    height: 48px;
+    width: 150px;
+    border-radius: 8px;
+}
+.whIcon{
+    width: 19.9px;
+    height: 20px;
+}
+.whatsapp{
+    font-size: 14px;
+    color: #F1563F;
+    margin-left: 15px;
+    
+}
+.direction{
+    height: 60px;
+    width: 442px;
+    border: 1px solid #8B8B8B;
+    border-radius: 8px;
+    padding: 16px;
+}
+.daero{
+    margin-left: 80%;
+}
+.locateDiv{
+    border: 1px solid #e2e8f0;
+    align-items: center;
+    padding: 10px 20px;
+    height: 48px;
+    width: 150px;
+    border-radius: 8px;
+}
+.locateIcon{
+    width: 19.9px;
+    height: 20px;
+}
+.locate{
+    font-size: 14px;
+    color: #F1563F;
+    margin-left: 15px;
+}
+
+.mapPlace{
+
+    background-color: rgb(48, 15, 15);
+}
