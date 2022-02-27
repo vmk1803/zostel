@@ -1,0 +1,51 @@
+.majourdiv{
+    border: 1px solid red;
+    height: 400px;
+    width: 1200px;
+    margin: auto;
+    /* background-color: white; */
+}
+.sliderDiv{
+    display: flex;
+    border: 1px solid red;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.h2text{
+    border: 1px solid red;
+    float: left;
+}
+.rxptex{
+    float: right;
+    font-weight: bolder;
+}
+.whatshomeimg{
+border: 1px solid red;
+height: 200px;
+width: 300px;
+margin-right: 15px;
+/* margin-top: 50px; */
+}
+.h5zhtext{
+    text-align: left;
+    border: 1px solid green;
+}
+.imagehome{
+    height: 100%;
+    width: 100%;
+}
+.explore{
+    width:300px ;
+}
+.ptext{
+    text-align: left;
+}
+.explbtn{
+    margin-top: -5px;
+    width: 280px;
+    height: 42px;
+    border: none;
+    color: white;
+    background-color: rgb(241,86,63);
+}

@@ -1,0 +1,59 @@
+.feturemain{
+    margin-top: 120px;
+}
+.fetmain{
+    /* height: 400px; */
+    /* margin-top: 60px; */
+    display: flex;
+    /* border:1px solid green; */
+}
+.fetext{
+    margin-top: -50px;
+    float:left;
+    margin-left: 100px;
+    /* border: 1px solid red; */
+}
+.fetexplore{
+    /* border: 1px solid red; */
+    width: 250px;
+
+}
+.feh6text{
+    float: left;
+    margin-top: 5px;
+    margin-left: 8px;
+    /* border: 1px solid red; */
+}
+.feh5text{
+    text-align: left;
+    float: left;
+    margin-left: 8px;
+}
+.feptext{
+    text-align: left;
+    margin-left: 8px;
+    
+}
+.feexpbtn{
+    width: 220px;
+    margin-top: 110px;
+    border: none;
+    background-color: rgb(241,86,63);
+}
+
+
+
+.featexp{
+    margin-top: -35px;
+    margin-right: 80px;
+    /* border: 1px solid red; */
+    float: right;
+    font-weight: bolder;
+}
+
+.boxes{
+    /* border: 5px solid blue; */
+    margin-right: 10px;
+    margin-left: 0px;
+    width: 500px;
+}

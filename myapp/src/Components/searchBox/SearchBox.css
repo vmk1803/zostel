@@ -1,0 +1,67 @@
+.background {
+  border: 1px solid red;
+    position: absolute;
+    height: 145px;
+    width: 65%;
+    z-index:12;
+    margin: auto;
+    margin-top: 30px;
+    left: 224px;
+    right: 224px;
+    top: 65%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-transform: uppercase;
+  }
+.container{
+  margin-top: 10px ;
+}
+  .option1 {
+    /* border: 1px solid green; */
+    margin-left: 1%;
+    cursor: pointer;
+    /* margin-bottom: 1px; */
+    margin-top: 0px;
+    float: left;
+    /* height: 40px; */
+    /* border: 1px; */
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 0;
+    /* background-color: orange; */
+    box-shadow: 0px 2px 3.8px 0.2px rgb(0 0 0 / 25%);
+    /* line-height: inherit; */
+    /* border-bottom: 2px solid white; */
+  }
+  
+  .option2 {
+    /* border: 1px solid red; */
+    /* float: right; */
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: 300px;
+    align-items: center;
+    /* margin: 0 10%; */
+    /* border-bottom: 2px solid white; */
+  }
+  
+  .size {
+    width: 31%;
+  }
+  .option1>button{
+    margin-top: 5px;
+    height: 60px;
+    width: 440px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+  }
+  .btnmnmn{
+    margin-top: 5px;
+    height: 60px;
+    width: 440px;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+  }
+  
