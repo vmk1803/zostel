@@ -252,10 +252,7 @@ function Razor() {
                 {data.data.map((e) => (
                   <div className="detail">
                     <div className="detail-1">
-                      <img
-                        src="https://img.cdn.zo.xyz/zostel/gallery/images/jRUmE1kcQPisNDnSCPkDqg/manali-private-room-2-20201105110545.jpg?w=1280"
-                        alt=""
-                      />
+                      <img src={e.imageUrl} alt="roomimage" />
                     </div>
                     <div className="detail-2">
                       <p className="detail-name">

@@ -27,7 +27,7 @@ const RoomDetails = styled.div`
   display: flex;
   background-color: #e8f0f2;
   /* margin-bottom: 10px; */
-  padding : 12px 0px;
+  padding: 12px 0px;
 
   & .hotelRoom-details {
     width: 66%;
@@ -153,7 +153,7 @@ const RoomDetails = styled.div`
     display: flex;
     justify-content: space-around;
     line-height: 1;
-    padding : 3px 0px;
+    padding: 3px 0px;
     background-color: white;
     border-radius: 10px;
     &:hover {
@@ -468,6 +468,7 @@ export const Rooms = () => {
                               title: e.title,
                               rooms: 1,
                               price: e.basicPrice,
+                              imageUrl: e.roomImg[0],
                             };
                             var selected = {
                               ...selectedRooms,
@@ -503,6 +504,7 @@ export const Rooms = () => {
                         title: e.title,
                         rooms: 1,
                         price: e.basicPrice,
+                        imageUrl: e.roomIng[0],
                       };
                       var selected = {
                         ...selectedRooms,

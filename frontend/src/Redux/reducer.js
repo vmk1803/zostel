@@ -15,6 +15,7 @@ const init = {
     data: [],
     totalPrice: 0,
     date: getDate(),
+    imageUrl: "",
   },
 };
 
