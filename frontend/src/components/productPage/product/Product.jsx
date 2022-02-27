@@ -1,9 +1,14 @@
 import React from 'react'
 import Footer from '../footer/Footer'
+import Contact from "../contact/Contact"
+import './product.css';
 function Product() {
   return (
-    
-<div>
+<div className='productSec'>
+  <section className='section0'>
+  <Contact/>
+  </section>
+  
   <section className='section1'>
     <h2>COVID Policy</h2>
     <p>

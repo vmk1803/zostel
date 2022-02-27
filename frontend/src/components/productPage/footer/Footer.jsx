@@ -1,10 +1,10 @@
 import './footer.css'
-import mainLogo from './asset/img/mainLogo.svg'
+import mainLogo from '../img/mainLogo.svg'
 
 export default function footer() {
   return (
         <>
-        <div className='main'>
+        <div className='main1'>
             <div>
                 <div className='heading'>
                     <img className="logo" src={mainLogo} alt="Logo" />
