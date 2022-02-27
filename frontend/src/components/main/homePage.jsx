@@ -1,7 +1,7 @@
 import { Navbar } from "../main/Home/Navbar/Navbar";
 import { SlideShow } from "../main/Coverpage/SlidShow";
 import { Destination } from "../main/Home/Destination/Destinaton";
-import { WhatsNew } from "../main/Home/whatsnew/Whatsnew";
+// import { WhatsNew } from "../main/Home/whatsnew/Whatsnew";
 import { Zostelhomes } from "../main/Home/ZostelHomes/zostelhome";
 import { FeaturesHotels } from "../main/Home/FeaturedHotels/FeaturesHostels";
 import { Escape } from "../main/Escape/Escape";
@@ -14,7 +14,7 @@ function HomePage() {
       <Navbar></Navbar>
       <SlideShow></SlideShow>
       <Destination></Destination>
-      <WhatsNew></WhatsNew>
+      {/* <WhatsNew></WhatsNew> */}
       <Zostelhomes></Zostelhomes>
       <Escape></Escape>
       <FeaturesHotels></FeaturesHotels>
