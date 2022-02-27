@@ -1,0 +1,12 @@
+.main-div{
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.space-top{
+    margin-top: 120px;
+}
+.text-uppercase{
+    /* border: 1px solid red; */
+    margin-left: 0px;
+}

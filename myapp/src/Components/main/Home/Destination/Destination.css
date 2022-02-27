@@ -1,0 +1,54 @@
+.text-uppercase{
+    /* border: 1px solid red; */
+    text-align: left;
+   
+    
+}
+.desexptex{
+    float: right;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.majourDiv{
+    /* border: 1px solid green; */
+    height: 400px;
+    width: 1250px;
+    
+    display: grid;
+    background-color: rgb(238,239,235);
+    /* margin: auto; */
+}
+.container{
+    /* border: 1px solid blue; */
+    display: flex;
+margin-left:35px;
+    
+}
+.firstRow{
+display: flex;
+/* padding: 10px;
+margin: 15px; */
+}
+.secondRow{
+    display: flex;
+}
+
+.imgeandtextDiv{
+    /* border: 1px solid blue; */
+    padding: 10px;
+    height:100px ;
+}
+
+.textDiv{
+    background-color: white;
+    color: black;
+    
+}
+.shadow-box-example {
+    height: 50px;
+    width: 100%;
+    background-color: white ;
+  }
+  .image{
+      height: 120px;
+  }
