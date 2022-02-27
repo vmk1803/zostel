@@ -3,15 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "db.js",
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon src/server.js"
+    "start": "nodemon src/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.26.0",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mongoose": "^6.2.3",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "razorpay": "^2.8.0"
   }
 }

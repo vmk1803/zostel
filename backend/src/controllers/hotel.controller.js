@@ -16,8 +16,8 @@ router.post("", async (req, res) => {
 router.get("/:hotelname", async (req, res) => {
   try {
     const hotel = await Hotel.findOne({ placeName: req.params.hotelname })
-      .select({ _id: 0 })
       .populate({ path: "address" })
+      .populate({ path: "rooms" })
       .lean()
       .exec();
     return res.status(200).send(hotel);
@@ -40,6 +40,27 @@ router.get("/:hotelName/rooms", async (req, res) => {
       .lean()
       .exec();
     return res.send(rooms);
+  } catch (err) {
+    return res.status(500).send(err.message);
+  }
+});
+
+router.get("/:hotelName/address", async (req, res) => {
+  try {
+    const address = await Hotel.findOne({
+      placeName: req.params.hotelName,
+    })
+      .populate({ path: "address" })
+      .select({
+        _id: 0,
+        placeName: 0,
+        placeDescription: 0,
+        placeImg: 0,
+        rooms: 0,
+      })
+      .lean()
+      .exec();
+    return res.status(200).send(address);
   } catch (err) {
     return res.status(500).send(err.message);
   }
