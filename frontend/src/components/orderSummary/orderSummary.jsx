@@ -15,7 +15,7 @@ function Razor() {
 
   async function fetchOrders() {
     const { data } = await axios.get(
-      "http://localhost:2345/razors/list-orders"
+      "https://clone-zostel.herokuapp.com/razors/list-orders"
     );
     setOrders(data);
   }
@@ -34,7 +34,7 @@ function Razor() {
       try {
         setLoading(true);
         const result = await axios.post(
-          "http://localhost:2345/razors/create-order",
+          "https://clone-zostel.herokuapp.com/razors/create-order",
           {
             amount: 115 + "00",
           }
@@ -42,7 +42,9 @@ function Razor() {
         const { amount, id: order_id, currency } = result.data;
         const {
           data: { key: razorpayKey },
-        } = await axios.get("http://localhost:2345/razors/get-razorpay-key");
+        } = await axios.get(
+          "https://clone-zostel.herokuapp.com/razors/get-razorpay-key"
+        );
 
         const options = {
           key: razorpayKey,
@@ -53,7 +55,7 @@ function Razor() {
           order_id: order_id,
           handler: async function (response) {
             const result = await axios.post(
-              "http://localhost:2345/razors/pay-order",
+              "https://clone-zostel.herokuapp.com/razors/pay-order",
               {
                 amount: amount,
                 razorpayPaymentId: response.razorpay_payment_id,

@@ -138,10 +138,12 @@ export const FrontDisplay = () => {
   let [addClass, setClass] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:2345/hotels/Alleppey").then((res) => {
-      dispatch(addData(res.data));
-      dispatch(addRooms(res.data.rooms));
-    });
+    axios
+      .get("https://clone-zostel.herokuapp.com/hotels/Alleppey")
+      .then((res) => {
+        dispatch(addData(res.data));
+        dispatch(addRooms(res.data.rooms));
+      });
   }, []);
 
   function handleDescription() {
