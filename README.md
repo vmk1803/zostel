@@ -47,7 +47,7 @@
 
 # What did we Learn ?
 
-- ### We were able to mimic basic functionalities on the website such as sign-in, signup, payment gateway, creating cloud database and post data using our own database, and fetch successfully, added different types of filters.
+- ### We were able to mimic basic functionalities on the website such as payment gateway, creating cloud database and post data using our own database, and fetch successfully, added different types of filters.
 - ### There are a lot of things we took away from this experience apart from refining our coding capabilities, such as working in a team and our communications skills along with how to structure a project and distribution of tasks in a manner that will prove to be most fruitful.
 
 # Conclusion
