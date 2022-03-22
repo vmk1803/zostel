@@ -21,9 +21,11 @@
 - Create Folder in your local system
 
 ## Clone the Project
-
+- Create a Folder
+- open a new Terminal and type the below given snippet
 `git pull https://github.com/vmk1803/zostel.git`
-
+- Here type npm i or npm install 
+- Now to frontend and do npm i
 - Now the project is ready just go and visit home page
 
 # Project Snapshots
